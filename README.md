@@ -105,7 +105,7 @@ Các container của bài lab được lưu trên Dockerhub:
 
 Github: 
 
-
+![img](9)
 
 ### Demo lab
 
