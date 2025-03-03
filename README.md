@@ -105,7 +105,7 @@ Các container của bài lab được lưu trên Dockerhub:
 
 Github: 
 
-![img](9)
+![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image9.png?raw=true)
 
 ### Demo lab
 
