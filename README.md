@@ -65,35 +65,35 @@ Trong bài lab này, hệ thống cần ghi nhận các thao tác, sự kiện �
 
 Giao diện Labedit của bài lab: 
 
-![img](0)
+![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image.png?raw=true)
 
 Checkwork của bài lab: 
 
-![img](1)
+![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image1.png?raw=true)
 
 Cấu trúc thư mục bài lab: 
 
-![img](2)
+![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image2.png?raw=true)
 
 Thư mục attacker: 
 
-![img](3)
+![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image3.png?raw=true)
 
 Thư mục monitor: 
 
-![img](4)
+![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image4.png?raw=true)
 
 Dockerfiles:
 
-![img](5)
+![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image5.png?raw=true)
 
 Nội dung dockerfile máy attacker: 
 
-![img](6)
+![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image6.png?raw=true)
 
 Nội dung dockerfile của máy monitor: 
 
-![img](7)
+![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image7.png?raw=true)
 
 3. **Tích hợp và triển khai**
 
@@ -101,9 +101,11 @@ Dockerhub: https://hub.docker.com/repositories/ducthinhdt472003
 
 Các container của bài lab được lưu trên Dockerhub:
 
-![img](8)
+![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image8.png?raw=true)
 
 Github: 
+
+
 
 ### Demo lab
 
