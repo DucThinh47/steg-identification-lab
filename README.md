@@ -34,8 +34,61 @@ Bài lab này giúp tìm hiểu một kỹ thuật giấu tin trong mạng dựa
 
 ### Hướng dẫn thực hành lab
 
-1. Tải bài thực hành
+**Tải và khởi động bài thực hành**
 
+    Sử dụng lệnh để tải bài thực hành: 
+        
+        imodule https://github.com/DucThinh47/steg-identification-lab/raw/refs/heads/main/imodule-steg-identification.tar
+    
+    Khởi động bài thực hành: 
+
+        labtainer -r steg-identification
+
+**Task 1: Gửi gói tin**
+
+- Bên máy attacker, chạy lệnh để tiến hành gửi gói tin: 
+
+        python3 attacker.py
+
+- Bên máy monitor, sử dụng lệnh sau để khởi chạy wireshark: 
+
+        wireshark &
+
+- Kết quả mong đợi: Quan sát wireshark bên máy monitor, xác nhận gửi gói tin thành công
+
+**Task 2: Tìm thông điệp giấu trong gói tin**
+
+- Bên máy monitor, chạy lệnh:
+
+        python3 monitor.py
+
+- Quan sát trong wireshark, tìm ra các gói nào là gói có giấu tin bên trong, sau đó nhập giá trị IP ID của các gói tin này.
+
+- Tìm ra thông điệp ẩn là "HELLO"
+
+- Bên máy attacker, chạy lệnh: 
+
+        nano attacker.py
+
+- Sửa giá trị secret_message thành "PTIT< Mã sinh viên >". 
+
+- Gửi lại gói tin: 
+
+        python3 attacker.py
+
+- Bên máy monitor, chạy lệnh:
+
+        python3 monitor.py
+
+- Quan sát wireshark, tìm IP ID và ghép lại thành nội dung secret_message. 
+
+**Kiểm tra kết quả**
+
+    checkwork
+
+**Kết thúc bài lab**
+
+    stoplab
 ### Thiết kế xây dựng lab
 
 1. **Thiết kế bài thực hành**
@@ -73,39 +126,83 @@ Checkwork của bài lab:
 
 Cấu trúc thư mục bài lab: 
 
-![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image2.png?raw=true)
+![img](2)
 
 Thư mục attacker: 
 
-![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image3.png?raw=true)
+![img](3)
 
 Thư mục monitor: 
 
-![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image4.png?raw=true)
+![img](4)
 
-Dockerfiles:
+Thư mục Dockerfiles:
 
-![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image5.png?raw=true)
+![img](5)
 
 Nội dung dockerfile máy attacker: 
 
-![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image6.png?raw=true)
+![img](6)
 
 Nội dung dockerfile của máy monitor: 
 
-![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image7.png?raw=true)
+![img](7)
 
 3. **Tích hợp và triển khai**
 
-Dockerhub: https://hub.docker.com/repositories/ducthinhdt472003
+Dockerhub: https://hub.docker.com/u/ducthinhdt472003
 
 Các container của bài lab được lưu trên Dockerhub:
 
-![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image8.png?raw=true)
+![img](8)
 
 Github: 
 
-![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image9.png?raw=true)
+![img](9)
 
 ### Demo lab
+
+Tải bài lab: 
+
+![img](10)
+
+Khởi động bài lab: 
+
+![img](11)
+
+Tiến hành gửi gói tin từ máy attacker:
+
+![img](12)
+
+Quan sát wireshark bên máy monitor: 
+
+![img](13)
+
+Bên máy monitor, thực thi monitor.py: 
+
+![img](14)
+
+Tìm các gói có tin giấu và nhập giá trị IP ID của gói: 
+
+![img](15)
+
+Bên máy attacker, thay đổi secret_message thành "PTIT181":
+
+![img](16)
+
+Gửi lại gói tin: 
+
+![img](17)
+
+Bên máy monitor, thực hiện tương tự để tìm ra thông điệp: 
+
+![img](18)
+
+Checkwork: 
+
+![img](19)
+
+
+
+
 
