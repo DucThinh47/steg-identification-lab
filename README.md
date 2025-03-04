@@ -65,11 +65,11 @@ Trong bài lab này, hệ thống cần ghi nhận các thao tác, sự kiện �
 
 Giao diện Labedit của bài lab: 
 
-![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image.png?raw=true)
+![img](0)
 
 Checkwork của bài lab: 
 
-![img](https://github.com/DucThinh47/steg-identification-lab/blob/main/images/image1.png?raw=true)
+![img](1)
 
 Cấu trúc thư mục bài lab: 
 
